@@ -1,0 +1,71 @@
+.isekai-alert {
+	position: relative;
+    padding: .75rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+}
+
+.isekai-alert a {
+	font-weight: 700;
+}
+
+.isekai-alert-primary {
+    color: #004085;
+    background-color: #cce5ff;
+    border-color: #b8daff;
+}
+
+.isekai-alert-primary a {
+	color: #002752;
+}
+
+.isekai-alert-success {
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+}
+
+.isekai-alert-success a {
+	color: #0b2e13;
+}
+
+.isekai-alert-danger {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+
+.isekai-alert-danger a {
+	color: #491217;
+}
+
+.isekai-alert-warning {
+    color: #856404;
+    background-color: #fff3cd;
+    border-color: #ffeeba;
+}
+
+.isekai-alert-warning a {
+	color: #533f03;
+}
+
+.isekai-alert-secondary {
+    color: #383d41;
+    background-color: #e2e3e5;
+    border-color: #d6d8db;
+}
+
+.isekai-alert-secondary a {
+	color: #202326;
+}
+
+.isekai-alert-info {
+    color: #0c5460;
+    background-color: #d1ecf1;
+    border-color: #bee5eb;
+}
+
+.isekai-alert-info a {
+	color: #062c33;
+}
