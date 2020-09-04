@@ -3,9 +3,9 @@
 	"namemsg": "isekai-selectlicense",
 	"author": "Hyperzlib",
 	"version": "1.0.0",
-	"url": "https://www.isekai.cn",
+	"url": "https://github.com/Isekai-Project/mediawiki-extension-IsekaiSelectLicense",
 	"descriptionmsg": "isekai-selectlicense-desc",
-	"license-name": "GPL-2.0-or-later",
+	"license-name": "MIT",
 	"type": "parserhook",
 	"MessagesDirs": {
 		"IsekaiSelectLicense": [
