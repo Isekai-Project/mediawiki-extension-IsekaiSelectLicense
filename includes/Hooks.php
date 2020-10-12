@@ -48,7 +48,7 @@ class Hooks {
 		$out->addMeta('copyright', wfMessage('isekai-selectlicense-meta', $wgRightsText)->text());
     }
 
-    public static function onSkinCopyrightFooter( Title $title, $type, &$msg, &$link, &$forContent){
+    public static function onSkinCopyrightFooter( Title $title, $type, &$msg, &$link){
         global $wgIsekaiCustomLicense;
         if($type != 'history'){
             if($wgIsekaiCustomLicense){
