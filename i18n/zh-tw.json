@@ -1,4 +1,7 @@
 {
     "isekai-selectlicense-meta": "本頁面以 $1 條款授權使用。",
-    "isekai-selectlicense-copyright": "本頁面以 $1 條款授權使用。"
+    "isekai-selectlicense-copyright": "本頁面以 $1 條款授權使用。",
+    "isekai-selectlicense-notexists": "條款 $1 不存在",
+    "isekai-selectlicense-box-infotext": "本$1以 $2 條款授權使用。",
+    "isekai-selectlicense-box-notdefault": "請注意，本$1所採用的條款與網站的默認條款不同。"
 }
