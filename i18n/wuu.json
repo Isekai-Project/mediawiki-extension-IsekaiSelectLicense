@@ -2,5 +2,7 @@
     "isekai-selectlicense": "异世界百科 选择版权",
     "isekai-selectlicense-desc": "用<code>&lt;license&gt;</code>好选择特定页面上个版权。",
     "isekai-selectlicense-meta": "箇頁内容侪拉 $1 下底发布",
-    "isekai-selectlicense-copyright": "箇頁内容侪拉 $1 下底发布。"
+    "isekai-selectlicense-copyright": "箇頁内容侪拉 $1 下底发布。",
+    "isekai-selectlicense-notexists": "没名叫 $1 个授权协议",
+    "isekai-selectlicense-box-infotext": "箇$1侪拉$2下底发布"
 }
