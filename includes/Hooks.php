@@ -1,32 +1,33 @@
 <?php
+
 namespace Isekai\SelectLicense;
 
-use Message;
-use Title;
+use MediaWiki\Output\OutputPage;
+use MediaWiki\Title\Title;
 
 class Hooks {
-    public static function onOutputPageBeforeHTML( \OutputPage &$out ){
+    public static function onOutputPageBeforeHTML(OutputPage $out) {
         global $wgIsekaiLicenses, $wgIsekaiCustomLicense, $wgRightsPage, $wgRightsUrl, $wgRightsText, $wgRightsIcon, $wgFooterIcons;
-        
+
         $configs = $out->getJsConfigVars();
-        if(isset($configs['wgIsekaiLicense'])){
+        if (isset($configs['wgIsekaiLicense'])) {
             $licenseName = $configs['wgIsekaiLicense'];
-            if(isset($wgIsekaiLicenses[$licenseName])){
+            if (isset($wgIsekaiLicenses[$licenseName])) {
                 $license = $wgIsekaiLicenses[$licenseName];
-                if(isset($license['url'])){
+                if (isset($license['url'])) {
                     $wgRightsUrl = $license['url'];
                 }
-                if(isset($license['page'])){
+                if (isset($license['page'])) {
                     $wgRightsPage = $license['page'];
                     $license['url'] = Title::newFromText($wgRightsPage)->getLocalURL();
                 }
-                if(isset($license['name'])){
+                if (isset($license['name'])) {
                     $wgRightsText = $license['name'];
                 }
-                if(isset($license['namemsg'])){
+                if (isset($license['namemsg'])) {
                     $wgRightsText = wfMessage($license['namemsg'])->text();
                 }
-                if(isset($license['icon'])){
+                if (isset($license['icon'])) {
                     $wgRightsIcon = $license['icon'];
                 }
                 $wgIsekaiCustomLicense = true;
@@ -37,7 +38,7 @@ class Hooks {
                         'src' => $wgRightsIcon,
                         'alt' => $wgRightsText,
                     ];
-                    if(isset($license['iconset'])){
+                    if (isset($license['iconset'])) {
                         $wgFooterIcons['copyright']['copyright']['srcset'] = $license['iconset'];
                     }
                 }
@@ -45,13 +46,13 @@ class Hooks {
         }
 
         //设置Header
-		$out->addMeta('copyright', wfMessage('isekai-selectlicense-meta', $wgRightsText)->text());
+        $out->addMeta('copyright', wfMessage('isekai-selectlicense-meta', $wgRightsText)->text());
     }
 
-    public static function onSkinCopyrightFooter( Title $title, $type, &$msg, &$link){
+    public static function onSkinCopyrightFooter(Title $title, $type, &$msg, &$link) {
         global $wgIsekaiCustomLicense;
-        if($type != 'history'){
-            if($wgIsekaiCustomLicense){
+        if ($type != 'history') {
+            if ($wgIsekaiCustomLicense) {
                 $msg = 'isekai-selectlicense-copyright';
             }
         }

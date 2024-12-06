@@ -1,6 +1,9 @@
 {
     "isekai-selectlicense": "이세카이 - 위키 저작권 을 선택 하 다",
     "isekai-selectlicense-desc": "<code>&lt;license&gt;</code> 를 사용하여 페이지의 라이센스를 변경합니다.",
-    "isekai-selectlicense-meta": "이 페이지의 내용은 $1에 따라 사용할 수 있습니다",
-    "isekai-selectlicense-copyright": "이 페이지의 내용은 $1에 따라 사용할 수 있습니다"
+    "isekai-selectlicense-meta": "이 페이지의 내용은 $1에 따라 사용할 수 있습니다.",
+    "isekai-selectlicense-copyright": "이 페이지의 내용은 $1에 따라 사용할 수 있습니다.",
+    "isekai-selectlicense-notexists": "라이센스 '$1' 은 존재하지 않습니다.",
+    "isekai-selectlicense-box-infotext": "이 $1의 내용은 $2에 따라 사용할 수 있습니다.",
+    "isekai-selectlicense-box-notdefault": "이 $1의 라이센스는이 사이트의 기본 라이선스와 다르다는 점에 유의하십시오."
 }

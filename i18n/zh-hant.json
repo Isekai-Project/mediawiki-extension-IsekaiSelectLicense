@@ -2,5 +2,8 @@
     "isekai-selectlicense": "异世界百科 選擇授權許可",
     "isekai-selectlicense-desc": "通過<code>&lt;license&gt;</code>可以選擇頁面的授權許可。",
     "isekai-selectlicense-meta": "本頁面遵循 $1",
-    "isekai-selectlicense-copyright": "本頁面內容採用$1授權。"
+    "isekai-selectlicense-copyright": "本頁面內容採用$1授權。",
+    "isekai-selectlicense-notexists": "授權協議 $1 不存在",
+    "isekai-selectlicense-box-infotext": "本$1採用$2進行授權。",
+    "isekai-selectlicense-box-notdefault": "請注意，本$1所採用的授權協議與網站的默認授權協議不同。"
 }
